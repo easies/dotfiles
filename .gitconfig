@@ -1,0 +1,14 @@
+[core]
+    editor = vim
+[user]
+    email = alex@thirdbeat.com
+    name = Alex Lee
+[alias]
+    br = branch
+    ci = commit
+    co = checkout
+    cl = clone
+    st = status
+    fixmeup = !/home/lee/bin/fixmeup.sh
+[diff]
+    color = 1
