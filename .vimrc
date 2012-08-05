@@ -51,15 +51,12 @@ if has("autocmd")
     autocmd Filetype python nmap <F6> :!python -m doctest -v 2>&1 %<CR>
     autocmd Filetype python set sw=4 tabstop=4 softtabstop=4
 
-    " For Athena
-    autocmd BufRead *athena/*.py set shiftwidth=2 tabstop=2 softtabstop=2
-    autocmd BufNew *athena/*.py set shiftwidth=2 tabstop=2 softtabstop=2
     " 'quote' a word
-    autocmd Filetype python nnoremap qw :silent! normal mpea'<Esc>bi'<Esc>`pl
+    " autocmd Filetype python nnoremap qw :silent! normal mpea'<Esc>bi'<Esc>`pl
     " double "quote" a word
-    autocmd Filetype python nnoremap qd :silent! normal mpea"<Esc>bi"<Esc>`pl
+    " autocmd Filetype python nnoremap qd :silent! normal mpea"<Esc>bi"<Esc>`pl
     " remove quotes from a word
-    autocmd Filetype python nnoremap wq :silent! normal mpeld bhd `ph<CR>
+    " autocmd Filetype python nnoremap wq :silent! normal mpeld bhd `ph<CR>
 
     autocmd Filetype htmldjango set sw=2 tabstop=2 softtabstop=2
     autocmd Filetype css set sw=2 tabstop=2 softtabstop=2
@@ -68,7 +65,7 @@ if has("autocmd")
     autocmd Filetype java nmap <F5> :!java `echo % \| sed -e 's/\.java$//' -e 's/\//./g'`<CR>
     autocmd Filetype java nmap <F6> :!javac %<CR>
 
-    " Scheme support
+    " Make support
     autocmd filetype make set noexpandtab
 
     " TeX support
