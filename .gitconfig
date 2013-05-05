@@ -12,3 +12,5 @@
     fixmeup = !/home/lee/bin/fixmeup.sh
 [diff]
     color = 1
+[push]
+    default = simple
